@@ -1,0 +1,136 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Luca Cherubin - Project</title> 
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+
+			<div id="wrapper" class="fade-in">
+
+					<header id="header">
+						  <a href="index.html" class="logo">Home</a>
+					</header>   
+
+					<nav id="nav">
+						<ul class="links">
+							<li class="active"><a href="index.html">My Portfolio</a></li>
+							<li><a href="certifications.html">Certifications</a></li>
+						</ul>
+						<ul class="icons">
+							<li><a href="https://www.linkedin.com/in/luca-cherubin-1359b4196/" target=”_blank” class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
+							<li><a href="https://github.com/LucaCherubin" target=”_blank” class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
+					</nav>
+
+					<div id="main">
+						<section class="post">
+							<header class="major">
+								<h1>Python<br>
+									A Dice Game<br />
+								</h1>
+								<p text-align="justify" word-break="keep-all">Welcome to the dice game!<br>
+									With this Python program you can register players and they can play dice.<br>
+								</p>
+							</header>
+							
+							<hr class="horizontal-line">
+							
+							<div style="text-align: center; align-items: center;">
+								<a href="project6_python/python_luca-cherubin_project.zip" download>
+								  <button class="button">Download file</button>
+								</a>
+							</div>
+
+							<hr class="horizontal-line">
+
+							<p>
+								All-That-Dice is a Python program that simulates a dice game where 
+								players can register, bet their chips, and play various dice games.
+								The program offers three different game modes: 
+								Odd-or-Even, Maxi, and Bunco.
+							</p>
+
+							<p>- For a better user experience, open the <b>all_that_dice.cpython-312</b> file</p>
+
+							<hr class="horizontal-line">
+
+							<h3><u>Requirements:</u></h3>
+
+							<p>Python 3.x</p>
+
+							<hr class="horizontal-line">
+
+							<h3><u>Design Principles:</u></h3>
+
+							<p>The All-That-Dice program follows several object-oriented design 
+								principles to ensure code reusability, maintainability, and 
+								extensibility.</p>
+
+							<h3><u>- Polymorphism:</u></h3>
+
+							<p>Polymorphism is achieved through the use of the abstract base class 
+								Game and its concrete subclasses OddOrEven, Maxi, and Bunco. 
+								These subclasses implement the abstract play and displayDiceFace 
+								methods defined in the base class, allowing them to exhibit 
+								different behaviors while sharing a common interface.</p>
+
+							<h3><u>- Inheritance:</u></h3>
+
+							<p>Inheritance is used extensively in the program. 
+								The OddOrEven, Maxi, and Bunco classes inherit from the abstract base 
+								class Game, inheriting its common attributes and methods. 
+								This promotes code reuse and allows for the implementation of 
+								game-specific logic in the subclasses.
+								Additionally, the Dice class is used as a composition within the game 
+								classes, providing a reusable implementation for rolling and 
+								managing dice.</p>
+
+							<h3><u>- Abstraction:</u></h3>
+
+							<p>The class Game is an abstract base class that defines the common 
+								interface for all game classes. It declares abstract methods 
+								(play and displayDiceFace) that must be implemented by the concrete 
+								subclasses. This abstraction allows the program to work with game 
+								objects without needing to know the specific implementation details of each game.
+								The Dice class also provides an abstraction for rolling and managing 
+								dice, encapsulating the implementation details and exposing a simple 
+								interface for other classes to use.
+								By following these principles, the All-That-Dice program achieves code 
+								modularity, extensibility, and maintainability. 
+								New game types can be added by creating new subclasses of Game without 
+								modifying the existing code. The use of polymorphism and inheritance 
+								promotes code reuse and allows for a consistent interface across 
+								different game types.</p>
+
+
+							
+							<hr class="horizontal-line">
+	
+						</section>
+
+					</div>
+
+				<footer>
+					<div id="copyright">
+						<h3>Luca Cherubin</h3>
+					</div>
+				</footer>
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
