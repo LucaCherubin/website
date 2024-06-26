@@ -32,13 +32,14 @@
 						<section class="post">
 							<header class="major">
 								<h1>Python<br>
-									A Dice Game<br />
+									Medieval Life<br />
 								</h1>
-								<p text-align="justify" word-break="keep-all">Welcome to the dice game!<br>
-									With this Python program you can register players and they can play dice.<br>
+								<p text-align="justify" word-break="keep-all">Welcome to the Medieval Life game!<br>
+									With this Python program you can hire new heroes, train them or gamble at the tavern.<br>
+									Remember to heal your heroes after an adventure.
 								</p>
 							</header>
-							
+							<a class="image fit"><img src="images/project_06/20240626_python_medieval-life_pic01.png" alt="" /></a>
 							<hr class="horizontal-line">
 							
 							<div style="text-align: center; align-items: center;">
@@ -50,13 +51,12 @@
 							<hr class="horizontal-line">
 
 							<p>
-								All-That-Dice is a Python program that simulates a dice game where 
-								players can register, bet their chips, and play various dice games.
-								The program offers three different game modes: 
-								Odd-or-Even, Maxi, and Bunco.
+								Medieval Life is an engaging text-based adventure game set in the Middle Ages. 
+								Players can recruit heroes, embark on hunting expeditions, gamble at taverns, 
+								and rise through the ranks to become legendary figures in a medieval world.
 							</p>
 
-							<p>- For a better user experience, open the <b>all_that_dice.cpython-312</b> file</p>
+							<p>- For a better user experience, open the <b>medieval_life.exe</b> file</p>
 
 							<hr class="horizontal-line">
 
@@ -68,49 +68,55 @@
 
 							<h3><u>Design Principles:</u></h3>
 
-							<p>The All-That-Dice program follows several object-oriented design 
+							<p>The program follows several object-oriented design 
 								principles to ensure code reusability, maintainability, and 
 								extensibility.</p>
 
 							<h3><u>- Polymorphism:</u></h3>
 
 							<p>Polymorphism is achieved through the use of the abstract base class 
-								Game and its concrete subclasses OddOrEven, Maxi, and Bunco. 
-								These subclasses implement the abstract play and displayDiceFace 
-								methods defined in the base class, allowing them to exhibit 
+								Action and its concrete subclasses Hunt and Gamble. 
+								These subclasses implement the abstract start 
+								method defined in the base class, allowing them to exhibit 
 								different behaviors while sharing a common interface.</p>
 
 							<h3><u>- Inheritance:</u></h3>
 
 							<p>Inheritance is used extensively in the program. 
-								The OddOrEven, Maxi, and Bunco classes inherit from the abstract base 
-								class Game, inheriting its common attributes and methods. 
+								The Hunt and Gamble classes inherit from the abstract base 
+								class Action, inheriting its common attributes and methods. 
 								This promotes code reuse and allows for the implementation of 
-								game-specific logic in the subclasses.
-								Additionally, the Dice class is used as a composition within the game 
-								classes, providing a reusable implementation for rolling and 
-								managing dice.</p>
+								game-specific logic in the subclasses.</p>
 
 							<h3><u>- Abstraction:</u></h3>
 
-							<p>The class Game is an abstract base class that defines the common 
-								interface for all game classes. It declares abstract methods 
-								(play and displayDiceFace) that must be implemented by the concrete 
+							<p>The class Action is an abstract base class that defines the common 
+								interface for all child classes. It declares abstract methods 
+								(__init__ and start) that must be implemented by the concrete 
 								subclasses. This abstraction allows the program to work with game 
-								objects without needing to know the specific implementation details of each game.
-								The Dice class also provides an abstraction for rolling and managing 
-								dice, encapsulating the implementation details and exposing a simple 
-								interface for other classes to use.
-								By following these principles, the All-That-Dice program achieves code 
+								objects without needing to know the specific implementation details of each class.
+								By following these principles, the program achieves code 
 								modularity, extensibility, and maintainability. 
-								New game types can be added by creating new subclasses of Game without 
+								New action types can be added by creating new subclasses without 
 								modifying the existing code. The use of polymorphism and inheritance 
 								promotes code reuse and allows for a consistent interface across 
 								different game types.</p>
-
-
 							
 							<hr class="horizontal-line">
+							<div>
+								<h2>UML Diagram</h2>
+								<p></br></p>
+								<a class="image fit"><img src="images/project_06/20240626_python_uml_pic01.png" alt="" /></a>
+								<p>Here is the complete UML representation of the program.
+									I have included cardinality between classes and relationship between them.
+								</p>
+
+
+
+							</div>
+							
+
+
 	
 						</section>
 
